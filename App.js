@@ -1,20 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from "react-native";
+import { Header, ListItem } from "./src/Components";
+import React from "react";
 
-export default function App() {
+const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Header />
+      <ListItem title="Apa itu e-wallet ?" />
+      <ListItem title="Apa itu e-money?" />
+      <ListItem title="Bagaimana cara topup saldo?" />
+      <ListItem title="Bagaimana cara transfer dana ?" />
+      <ListItem title="Berapa fee untuk transfer ke bank?" />
     </View>
   );
-}
+};
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {
+    marginTop: "10%",
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "#fff",
   },
 });
