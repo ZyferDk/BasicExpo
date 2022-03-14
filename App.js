@@ -19,7 +19,7 @@ export default App;
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: "10%",
+    marginTop: "7%",
     flex: 1,
     backgroundColor: "#fff",
   },
