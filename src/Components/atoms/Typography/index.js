@@ -6,15 +6,12 @@ const Typography = ({
   size,
   weight,
   color,
-  lineHeight,
   align,
   width,
-  children
+  children,
 }) => {
   return (
-    <Text
-      style={styles.text(flex, size, weight, color, lineHeight, align, width)}
-    >
+    <Text style={styles.text(flex, size, weight, color, align, width)}>
       {children}
     </Text>
   );
@@ -23,7 +20,7 @@ const Typography = ({
 export default Typography;
 
 const styles = StyleSheet.create({
-  text: (flex, size, weight, color, lineHeight, align, width) => ({
+  text: (flex, size, weight, color, align, width) => ({
     flex: flex,
     fontSize: size,
     fontWeight: weight,
